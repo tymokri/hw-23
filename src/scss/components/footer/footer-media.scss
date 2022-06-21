@@ -1,0 +1,16 @@
+.footer {
+
+  @media (max-width: $breakpoint-xl) {
+    &__contact {
+      &-menu-content {
+        column-gap: 30px;
+      }
+    }
+
+    &__newsletter {
+      &-input-group {
+        height: fit-content;
+      }
+    }
+  }
+}

@@ -1,0 +1,1618 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Duo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6">
+                    <div class="header__top-contact">
+                        <a href="tel:+330499632050">
+                            <i class="bi bi-telephone header__top-icon"></i>
+                            <span>+33 (0)4 99 63 20 50</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6">
+
+                    <div class="header__top-lang-switcher d-flex justify-content-end">
+                        <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle p-0 border-0" type="button" id="lang-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe2 header__top-icon"></i>
+                                <span>English</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="lang-menu">
+                                <li><button class="dropdown-item" type="button">Ukrainian</button></li>
+                                <li><button class="dropdown-item" type="button">Spanish</button></li>
+                                <li><button class="dropdown-item" type="button">Polish</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header__navigation">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="../assets/img/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+
+                        <li class="nav-item header__navigation-search-wrapper">
+                            <a class="header__navigation-search nav-link p-0"
+                               data-bs-toggle="modal" data-bs-target="#searchModal" href="#">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-0" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="#">Product #1</a></li>
+                                <li><a class="dropdown-item" href="#">Product #2</a></li>
+                                <li><a class="dropdown-item" href="#">Product #3</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-0" href="#" id="applicationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Applications
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="applicationsDropdown">
+                                <li><a class="dropdown-item" href="#">Application #1</a></li>
+                                <li><a class="dropdown-item" href="#">Application #2</a></li>
+                                <li><a class="dropdown-item" href="#">Application #3</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">Documentation</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="d-flex header__navigation-auth">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            <i class="bi bi-person"></i>
+                        </a>
+
+                        <a data-bs-toggle="offcanvas" href="#cartSection" role="button" aria-controls="cartSection">
+                            <i class="bi bi-cart" ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section class="displaynav">
+        <div class="container">
+            <div class="row">
+
+                <div class="displaynav__wrapper">
+                    <nav class="displaynav__content" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page"><p class="active">Products</p></li>
+                            <li class="breadcrumb-item"><a href="#">Display Wall</a></li>
+                            <li class="breadcrumb-item"><a href="#">Products</a></li>
+                        </ol>
+                    </nav>
+
+                    <div class="displaynav__title">
+                        <span>Display Wall</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="search">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-3 col-md-12 display-wall-group">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle search__button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Display Wall</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Item #1</a></li>
+                            <li><a class="dropdown-item" href="#">Item #2</a></li>
+                            <li><a class="dropdown-item" href="#">Item #3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-9 col-lg-9 col-md-12">
+                    <div class="input-group mb-3 search-input-group">
+                        <input type="text" class="form-control search__input" placeholder="Search" aria-label="Search" aria-describedby="search-button">
+
+                        <button class="btn btn-outline-secondary" type="button" id="search-button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+<!--                <div class="col-3">-->
+<!--                    <div class="dropdown">-->
+<!--                        <button class="btn btn-secondary dropdown-toggle search__button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                            <span>Display Wall</span>-->
+<!--                        </button>-->
+<!--                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">-->
+<!--                            <li><a class="dropdown-item" href="#">Item #1</a></li>-->
+<!--                            <li><a class="dropdown-item" href="#">Item #2</a></li>-->
+<!--                            <li><a class="dropdown-item" href="#">Item #3</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-9">-->
+<!--                    <div class="input-group mb-3">-->
+<!--                        <input type="text" class="form-control search__input" placeholder="Search" aria-label="Search" aria-describedby="search-button">-->
+
+<!--                        <button class="btn btn-outline-secondary" type="button" id="search-button">-->
+<!--                            <i class="bi bi-search"></i>-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+
+                <div class="filter-button-offcanvas-wrapper d-flex justify-content-center">
+                    <button class="col-12 filter-button-offcanvas">
+                        <a data-bs-toggle="offcanvas" href="#filterSection" role="button" aria-controls="filterSection">
+                            FILTER
+                        </a>
+                    </button>
+                </div>
+
+                <aside class="col-lg-3 col-md-3 main__filter">
+
+                    <div class="accordion main__filter-content" id="accordionPanelsStayOpenExample">
+                        <div class="main__filter-subtitle d-flex justify-content-between">
+                            <div class="main__filter-subtitle-results">23 Results</div>
+                            <div class="main__filter-subtitle-clear"><i class="bi bi-x-circle"></i>
+                                <a class="main__filter-clear-button" href="#">Clear all Filters</a>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item main__filter-content-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    <p>Subcategory</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body main__filter-content-body">
+                                    <div class="main__filter-check-wrapper-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckChecked-1-1" checked>
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckChecked-1-1">
+                                                <span>Xpressions</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckChecked-1-2" checked>
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckChecked-1-2">
+                                                <span>Xtension</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-1-3">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-1-3">
+                                                <span>Virage</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-1-4">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-1-4">
+                                                <span>Contour</span> <span>(4)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-1-5">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-1-5">
+                                                <span>Xperience</span> <span>(4)</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item main__filter-content-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <p>Type</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body main__filter-content-body">
+
+                                    <div class="main__filter-check-wrapper-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckChecked-2-1" checked>
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckChecked-2-1">
+                                                <span>Pop-up</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckChecked-2-2" checked>
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckChecked-2-2">
+                                                <span>Tubar</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-2-3">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-2-3">
+                                                <span>Table top</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item main__filter-content-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <p>Features</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body main__filter-content-body">
+                                    <div class="main__filter-check-wrapper-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-3-1">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-3-1">
+                                                <span>Backlit</span> <span>(7)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckChecked-3-2" checked>
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckChecked-3-2">
+                                                <span>TV Mount</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-3-3">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-3-3">
+                                                <span>Shelving</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-3-4">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-3-4">
+                                                <span>Arch</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-3-5">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-3-5">
+                                                <span>Double sided</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item main__filter-content-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                    <p>Width</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body main__filter-content-body">
+                                    <div class="main__filter-check-wrapper-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckChecked-4-1" checked>
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckChecked-4-1">
+                                                <span>2.5</span> <span>(7)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckChecked-4-2" checked>
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckChecked-4-2">
+                                                <span>5</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-4-3">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-4-3">
+                                                <span>8</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-4-4">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-4-4">
+                                                <span>10</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-4-5">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-4-5">
+                                                <span>20</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item main__filter-content-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                    <p>Height</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body main__filter-content-body">
+                                    <div class="main__filter-check-wrapper-block">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-5-1">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-5-1">
+                                                <span>4</span> <span>(7)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-5-2">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-5-2">
+                                                <span>8</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-5-3">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-5-3">
+                                                <span>10</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item main__filter-content-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                    <p>Form</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                                <div class="accordion-body main__filter-content-body">
+                                    <div class="main__filter-check-wrapper-block">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-6-1">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-6-1">
+                                                <span>Straight</span> <span>(7)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-6-2">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-6-2">
+                                                <span>Curved</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item main__filter-content-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                                    <p>Price Range</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                                <div class="accordion-body main__filter-content-body">
+                                    <div class="main__filter-check-wrapper-block">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-7-1">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-7-1">
+                                                <span>550-699</span> <span>(27)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-7-2">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-7-2">
+                                                <span>700-999</span> <span>(38)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-7-3">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-7-3">
+                                                <span>1000-1999</span> <span>(48)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-7-4">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-7-4">
+                                                <span>2000-3999</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-7-5">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-7-5">
+                                                <span>4000+</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item main__filter-content-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                                    <p>Set-up Time</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                                <div class="accordion-body main__filter-content-body">
+                                    <div class="main__filter-check-wrapper-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-8-1">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-8-1">
+                                                <span>1+ (Fast)</span> <span>(27)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckChecked-8-2" checked>
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckChecked-8-2">
+                                                <span>5+ (Easy)</span> <span>(38)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-8-3">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-8-3">
+                                                <span>10+ (Average)</span> <span>(48)</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check form-check-none-line">
+                                            <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="flexCheckDefault-8-4">
+                                            <label class="form-check-label main__filter-check-label" for="flexCheckDefault-8-4">
+                                                <span>20+ (Expert)</span> <span>(8)</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+                <div class="col-lg-9 main__row-items d-flex flex-column">
+
+                    <div class="col-lg-12 main__row-items-wrapper d-flex flex-wrap">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                </div>
+                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-comment-2">
+                                    <img src="../assets/img/best-seller.svg" alt="comment">
+                                    <img src="../assets/img/favorite.svg" alt="comment">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-comment-2">
+                                    <img src="../assets/img/best-seller.svg" alt="comment">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                </div>
+                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                </div>
+                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-comment-2">
+                                    <img src="../assets/img/best-seller.svg" alt="comment">
+                                    <img src="../assets/img/favorite.svg" alt="comment">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                </div>
+                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-comment-2">
+                                    <img src="../assets/img/best-seller.svg" alt="comment">
+                                    <img src="../assets/img/favorite.svg" alt="comment">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                </div>
+                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-comment-2">
+                                    <img src="../assets/img/best-seller.svg" alt="comment">
+                                    <img src="../assets/img/favorite.svg" alt="comment">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">
+                            <a href="#">
+                                <div class="main__row-items-wrapper-item-images d-flex ">
+                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">
+                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">
+                                </div>
+                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">
+                                    <b>Contour 10x4</b>8123,99 €
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="main__pages-wrapper d-flex justify-content-between align-items-center">
+
+                        <div class="main__pages-content">
+                            <span><a href="#"><i class="bi bi-arrow-left"></i></a></span>
+                            <span>Page</span>
+                            <span class="main__pages-content-current-number">1</span>
+                            <span>of 128</span>
+                            <span><a href="#"><i class="bi bi-arrow-right"></i></a></span>
+                        </div>
+
+                        <div class="main__pages-number">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle main__pages-number-button" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>50</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#">10</a></li>
+                                    <li><a class="dropdown-item" href="#">50</a></li>
+                                    <li><a class="dropdown-item" href="#">100</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+<!--                <div class="col-lg-9 col-md-12 main__row-items d-flex flex-column">-->
+
+<!--                    <div class="main__row-items-wrapper d-flex">-->
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-comment-2">-->
+<!--                                    <img src="../assets/img/best-seller.svg" alt="comment">-->
+<!--                                    <img src="../assets/img/favorite.svg" alt="comment">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="main__row-items-wrapper d-flex">-->
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-comment-2">-->
+<!--                                    <img src="../assets/img/best-seller.svg" alt="comment">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="main__row-items-wrapper d-flex">-->
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-comment-2">-->
+<!--                                    <img src="../assets/img/best-seller.svg" alt="comment">-->
+<!--                                    <img src="../assets/img/favorite.svg" alt="comment">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="main__row-items-wrapper d-flex">-->
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-comment-2">-->
+<!--                                    <img src="../assets/img/best-seller.svg" alt="comment">-->
+<!--                                    <img src="../assets/img/favorite.svg" alt="comment">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="main__row-items-wrapper d-flex">-->
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <h4 class="main__row-items-wrapper-item-comment-1">new</h4>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-2.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-comment-2">-->
+<!--                                    <img src="../assets/img/best-seller.svg" alt="comment">-->
+<!--                                    <img src="../assets/img/favorite.svg" alt="comment">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-4 col-sm-6 col-xs-12 main__row-items-wrapper-item">-->
+<!--                            <a href="#">-->
+<!--                                <div class="main__row-items-wrapper-item-images d-flex ">-->
+<!--                                    <img class="main__row-items-wrapper-item-img" src="../assets/img/shop-item-3.svg" alt="shop-item-picture">-->
+<!--                                    <img class="main__row-items-wrapper-item-img-change" src="../assets/img/shop-item-1.svg" alt="shop-item-picture">-->
+<!--                                </div>-->
+<!--                                <div class="main__row-items-wrapper-item-description d-flex flex-column align-items-center">-->
+<!--                                    <b>Contour 10x4</b>8123,99 €-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="main__pages-wrapper d-flex justify-content-between align-items-center">-->
+
+<!--                        <div class="main__pages-content">-->
+<!--                            <span><a href="#"><i class="bi bi-arrow-left"></i></a></span>-->
+<!--                            <span>Page</span>-->
+<!--                            <span class="main__pages-content-current-number">1</span>-->
+<!--                            <span>of 128</span>-->
+<!--                            <span><a href="#"><i class="bi bi-arrow-right"></i></a></span>-->
+<!--                        </div>-->
+
+<!--                        <div class="main__pages-number">-->
+<!--                            <div class="dropdown">-->
+<!--                                <button class="btn btn-secondary dropdown-toggle main__pages-number-button" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                                    <span>50</span>-->
+<!--                                </button>-->
+<!--                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">-->
+<!--                                    <li><a class="dropdown-item" href="#">10</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">50</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">100</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer__footer-content">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-5 d-md-grid d-sm-grid justify-content-md-center footer__contact">
+                    <img src="../assets/img/logo-footer.svg" alt="Logo Duo">
+
+                    <div class="footer__contact-address ">
+                        <a href="#" class="d-flex">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <address class="m-0">
+                                344, rue Jardin Colar - 34130 <br>
+                                LANSARGUES - FRANCE
+                            </address>
+                        </a>
+                    </div>
+
+                    <div class="footer__contact-tel">
+                        <a href="tel:+330499632050">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+33 (0)4 99 63 20 50</span>
+                        </a>
+                    </div>
+
+                    <div class="footer__contact-mail">
+                        <a href="mailto:sales@duodisplay.com">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>sales@duodisplay.com</span>
+                        </a>
+                    </div>
+
+                    <div class="footer__contact-made-in-img">
+                        <img src="../assets/img/made-in-france.svg" alt="Made-in-france-img">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-7 footer__contact-menu-content d-flex">
+
+                    <div class="footer__menu-products">
+                        <p class="footer__menu-title">Products</p>
+                        <p class="footer__menu-item">Display Wall</p>
+                        <p class="footer__menu-item">Counters</p>
+                        <p class="footer__menu-item">Outdoor</p>
+                        <p class="footer__menu-item">Frames</p>
+                        <p class="footer__menu-item">Stands</p>
+                        <p class="footer__menu-item">Outdoor</p>
+                        <p class="footer__menu-item">Frames</p>
+                        <p class="footer__menu-item">Stands</p>
+                    </div>
+
+                    <div class="footer__menu-applications">
+                        <p class="footer__menu-title">Applications</p>
+                        <p class="footer__menu-item">Tradeshows</p>
+                        <p class="footer__menu-item">Events</p>
+                        <p class="footer__menu-item">Road-shows</p>
+                        <p class="footer__menu-item">Decoration</p>
+                        <p class="footer__menu-item">Retail</p>
+                        <p class="footer__menu-item"></p>
+                    </div>
+
+                    <div class="footer__menu-my-profile">
+                        <p class="footer__menu-title">My Profile</p>
+                        <p class="footer__menu-item">Dashboard</p>
+                        <p class="footer__menu-item">Account</p>
+                        <p class="footer__menu-item">Orders</p>
+                        <p class="footer__menu-item">Quotes</p>
+                        <p class="footer__menu-item">My Contacts</p>
+                    </div>
+
+                    <div class="footer__menu-duo-display">
+                        <p class="footer__menu-title">Duo Display</p>
+                        <p class="footer__menu-item">About Duo</p>
+                        <p class="footer__menu-item">General terms</p>
+                        <p class="footer__menu-item">Warranty</p>
+                        <p class="footer__menu-item">Legal notice</p>
+                        <p class="footer__menu-item">Contact us</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 d-lg-inline-block col-md-12 d-md-grid justify-content-md-center d-md-flex gap-md-2 align-items-md-center footer__newsletter">
+                    <p class="footer__newsletter-title mb-md-2">Newsletter</p>
+
+                    <div class="input-group footer__newsletter-input-group mb-md-2">
+                        <input type="text" class="form-control footer__mail-input"
+                               placeholder="Your email address" aria-label="Search" aria-describedby="send-button">
+
+                        <button class="btn btn-outline-secondary" type="button" id="send-button">
+                            <i class="bi bi-symmetry-horizontal footer__newsletter-send-icon"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown footer__newsletter-lang mb-md-2">
+                        <button class="btn btn-sm dropdown-toggle footer__newsletter-lang-button" type="button" id="footer-lang-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe2 footer__footer-send-icon"></i>
+                            <span>English</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="footer-lang-menu">
+                            <li><button class="dropdown-item" type="button">Ukrainian</button></li>
+                            <li><button class="dropdown-item" type="button">Spanish</button></li>
+                            <li><button class="dropdown-item" type="button">Polish</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__newsletter-social-group mb-md-2">
+                        <div class="footer__newsletter-social-group-item d-flex">
+                            <img src="../assets/icons/social-flickr.svg" alt="social-icon">
+                            <img src="../assets/icons/twitter.svg" alt="social-icon">
+                            <img src="../assets/icons/facebook.svg" alt="social-icon">
+                            <img src="../assets/icons/instagram.svg" alt="social-icon">
+                            <img src="../assets/icons/likendin.svg" alt="social-icon">
+                            <img src="../assets/icons/youtube.svg" alt="social-icon">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__copyright">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-11 d-flex align-items-center">
+                    <span>© 2021 Duo Industrie. All rights reserved. From Duo with </span>&nbsp;&nbsp;<i class="bi bi-heart"></i>
+                </div>
+
+                <div class="col-1 d-flex justify-content-end ">
+                    <i class="bi bi-arrow-up footer__copyright-arrow-up"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Modal Search header-->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal User Register header-->
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">User register</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Your email address">
+                </div>
+
+                <div class="mb-3">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                </div>
+
+                <div class="mb-3">
+                    <label for="passwordRepeatInput" class="form-label">Repeat password</label>
+                    <input type="password" class="form-control" id="passwordRepeatInput" placeholder="Repeat password">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Section header-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSection" aria-labelledby="cartSectionLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartSectionleLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div>
+            Your cart is empty
+        </div>
+    </div>
+</div>
+
+<!-- Filter Section main-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="filterSection" aria-labelledby="filterSectionLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="filterSectionLabel">Filter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div>
+            <div class="accordion main__filter-content" id="o-accordionPanelsStayOpenExample">
+                <div class="main__filter-subtitle d-flex justify-content-between">
+                    <div class="main__filter-subtitle-results">23 Results</div>
+                    <div class="main__filter-subtitle-clear"><i class="bi bi-x-circle"></i>
+                        <a class="main__filter-clear-button" href="#">Clear all Filters</a>
+                    </div>
+                </div>
+
+                <div class="accordion-item main__filter-content-item">
+                    <h2 class="accordion-header" id="o-panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#o-panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="o-panelsStayOpen-collapseOne">
+                            <p>Subcategory</p>
+                        </button>
+                    </h2>
+                    <div id="o-panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="o-panelsStayOpen-headingOne">
+                        <div class="accordion-body main__filter-content-body">
+                            <div class="main__filter-check-wrapper-block">
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckChecked-1-1" checked>
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckChecked-1-1">
+                                        <span>Xpressions</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckChecked-1-2" checked>
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckChecked-1-2">
+                                        <span>Xtension</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-1-3">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-1-3">
+                                        <span>Virage</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-1-4">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-1-4">
+                                        <span>Contour</span> <span>(4)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-1-5">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-1-5">
+                                        <span>Xperience</span> <span>(4)</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item main__filter-content-item">
+                    <h2 class="accordion-header" id="o-panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o-panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="o-panelsStayOpen-collapseTwo">
+                            <p>Type</p>
+                        </button>
+                    </h2>
+                    <div id="o-panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="o-panelsStayOpen-headingTwo">
+                        <div class="accordion-body main__filter-content-body">
+
+                            <div class="main__filter-check-wrapper-block">
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckChecked-2-1" checked>
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckChecked-2-1">
+                                        <span>Pop-up</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckChecked-2-2" checked>
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckChecked-2-2">
+                                        <span>Tubar</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-2-3">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-2-3">
+                                        <span>Table top</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item main__filter-content-item">
+                    <h2 class="accordion-header" id="o-panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o-panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="o-panelsStayOpen-collapseThree">
+                            <p>Features</p>
+                        </button>
+                    </h2>
+                    <div id="o-panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="o-panelsStayOpen-headingThree">
+                        <div class="accordion-body main__filter-content-body">
+                            <div class="main__filter-check-wrapper-block">
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-3-1">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-3-1">
+                                        <span>Backlit</span> <span>(7)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckChecked-3-2" checked>
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckChecked-3-2">
+                                        <span>TV Mount</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-3-3">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-3-3">
+                                        <span>Shelving</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-3-4">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-3-4">
+                                        <span>Arch</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-3-5">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-3-5">
+                                        <span>Double sided</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item main__filter-content-item">
+                    <h2 class="accordion-header" id="o-panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o-panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="o-panelsStayOpen-collapseFour">
+                            <p>Width</p>
+                        </button>
+                    </h2>
+                    <div id="o-panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="o-panelsStayOpen-headingFour">
+                        <div class="accordion-body main__filter-content-body">
+                            <div class="main__filter-check-wrapper-block">
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckChecked-4-1" checked>
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckChecked-4-1">
+                                        <span>2.5</span> <span>(7)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckChecked-4-2" checked>
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckChecked-4-2">
+                                        <span>5</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-4-3">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-4-3">
+                                        <span>8</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-4-4">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-4-4">
+                                        <span>10</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-4-5">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-4-5">
+                                        <span>20</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item main__filter-content-item">
+                    <h2 class="accordion-header" id="o-panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o-panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="o-panelsStayOpen-collapseFive">
+                            <p>Height</p>
+                        </button>
+                    </h2>
+                    <div id="o-panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="o-panelsStayOpen-headingFive">
+                        <div class="accordion-body main__filter-content-body">
+                            <div class="main__filter-check-wrapper-block">
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-5-1">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-5-1">
+                                        <span>4</span> <span>(7)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-5-2">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-5-2">
+                                        <span>8</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-5-3">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-5-3">
+                                        <span>10</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item main__filter-content-item">
+                    <h2 class="accordion-header" id="o-panelsStayOpen-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o-panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="o-panelsStayOpen-collapseSix">
+                            <p>Form</p>
+                        </button>
+                    </h2>
+                    <div id="o-panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="o-panelsStayOpen-headingSix">
+                        <div class="accordion-body main__filter-content-body">
+                            <div class="main__filter-check-wrapper-block">
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-6-1">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-6-1">
+                                        <span>Straight</span> <span>(7)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-6-2">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-6-2">
+                                        <span>Curved</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item main__filter-content-item">
+                    <h2 class="accordion-header" id="o-panelsStayOpen-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o-panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="o-panelsStayOpen-collapseSeven">
+                            <p>Price Range</p>
+                        </button>
+                    </h2>
+                    <div id="o-panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="o-panelsStayOpen-headingSeven">
+                        <div class="accordion-body main__filter-content-body">
+                            <div class="main__filter-check-wrapper-block">
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-7-1">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-7-1">
+                                        <span>550-699</span> <span>(27)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-7-2">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-7-2">
+                                        <span>700-999</span> <span>(38)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-7-3">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-7-3">
+                                        <span>1000-1999</span> <span>(48)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-7-4">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-7-4">
+                                        <span>2000-3999</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-7-5">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-7-5">
+                                        <span>4000+</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item main__filter-content-item">
+                    <h2 class="accordion-header" id="o-panelsStayOpen-headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o-panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="o-panelsStayOpen-collapseEight">
+                            <p>Set-up Time</p>
+                        </button>
+                    </h2>
+                    <div id="o-panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="o-panelsStayOpen-headingEight">
+                        <div class="accordion-body main__filter-content-body">
+                            <div class="main__filter-check-wrapper-block">
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-8-1">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-8-1">
+                                        <span>1+ (Fast)</span> <span>(27)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckChecked-8-2" checked>
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckChecked-8-2">
+                                        <span>5+ (Easy)</span> <span>(38)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-8-3">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-8-3">
+                                        <span>10+ (Average)</span> <span>(48)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check form-check-none-line">
+                                    <input class="form-check-input main__filter-check-input" type="checkbox" value="" id="o-flexCheckDefault-8-4">
+                                    <label class="form-check-label main__filter-check-label" for="o-flexCheckDefault-8-4">
+                                        <span>20+ (Expert)</span> <span>(8)</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

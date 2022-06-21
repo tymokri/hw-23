@@ -1,0 +1,18 @@
+.header {
+
+  @media (max-width: $breakpoint-xl) {
+    &__navigation {
+      &-search {
+        &-wrapper {
+          margin-right: 25px;
+        }
+      }
+    }
+
+    .nav-item {
+      &:not(:first-child):not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+}

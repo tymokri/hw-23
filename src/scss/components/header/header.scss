@@ -1,0 +1,52 @@
+.header {
+  box-shadow: $default-box-shadow;
+
+  &__top {
+    background-color: $bg-color;
+    font-size: $font-sm;
+    padding: 5px 0;
+
+    &-icon {
+      margin-right: 6px;
+    }
+
+    &-lang-switcher {
+      button,
+      .dropdown-item {
+        font-size: $font-sm;
+      }
+    }
+  }
+
+  &__navigation {
+    &-search {
+      font-size: $header-icon-size;
+
+      &-wrapper {
+        margin-right: 65px;
+      }
+    }
+    
+    ul,
+    form {
+      padding-top: 7px;
+    }
+
+    .nav-item {
+      &:not(:first-child):not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &-auth {
+      gap: 16px;
+      i.bi-person {
+        font-size: calc(#{$header-icon-size} * 1.1);
+      }
+
+      i.bi-cart {
+        font-size: $header-icon-size;
+      }
+    }
+  }
+}

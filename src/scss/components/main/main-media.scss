@@ -1,0 +1,54 @@
+.main {
+
+  @media (min-width: $breakpoint-lg) {
+    .filter-button-offcanvas {
+      display: none;
+    }
+  }
+
+  @media (max-width: $breakpoint-xl) {
+    &__filter {
+      &-subtitle {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      &-check-input {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        margin-top: 3px;
+      }
+
+      &-content-item {
+        h2 {
+          padding: 12px 0;
+        }
+      }
+    }
+
+    &__row-items-wrapper {
+      &-item-comment-1 {
+        font-size: 10px;
+        padding: 3px 8px;
+      }
+
+      &-item-comment-2 {
+        width: 22%;
+        height: 22%;
+
+        img {
+          &:first-child {
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    .main__filter {
+      display: none;
+    }
+  }
+}

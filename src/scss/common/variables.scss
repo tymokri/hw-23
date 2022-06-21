@@ -1,0 +1,99 @@
+$main-font: 'Lato', sans-serif;
+
+$font-xs: 12px;
+$font-sm: 13px;
+$font-md: 15px;
+$font-xl: 17px;
+$font-xxl: 28px;
+
+$header-icon-size: 20px;
+
+$font-w-normal: 400;
+$font-w-bold: 700;
+
+$default-border-radius: 16px;
+$default-box-shadow: 16px 1px 18px rgba(0, 0, 0, 0.05);
+
+$white-color: #fff;
+$black-color: #000;
+$bg-color: #F4F4F4;
+$accent-color: #99C63C;
+$secondary-color: #BDBDBE;
+$rad-color: #EB5757;
+$active-color: #2268B4;
+$filter-line-color: #E2E2E2;
+$secondary-color-dark: #515151;
+$footer-color-dark: #26282C;
+
+$transition: 0.3s;
+
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+:root {
+  --bs-link-color: $black-color;
+}
+
+.navbar {
+  --bs-navbar-brand-margin-end: 46px;
+  --bs-navbar-color: $black-color;
+}
+
+.displaynav__content {
+  --bs-breadcrumb-divider: "—";
+  --bs-breadcrumb-divider-color: $secondary-color!important;
+}
+
+.active {
+  --bs-breadcrumb-item-active-color: $accent-color!important;
+}
+
+.search__button {
+  --bs-btn-font-size: $font-md;
+  --bs-btn-color: $black-color;
+  --bs-btn-bg: $white-color;
+  --bs-btn-border-color: $white-color;
+  --bs-btn-border-radius: 25px;
+}
+
+.search {
+  .btn-outline-secondary {
+    --bs-btn-color: $black-color;
+    --bs-btn-border-color: $white-color;
+    --bs-btn-padding-x: 25px;
+    --bs-btn-border-radius: 25px;
+  }
+}
+
+.main {
+  &__pages-number-button {
+    --bs-btn-font-size: 17px;
+    --bs-btn-font-weight: $font-w-bold;
+    --bs-btn-color: $black-color;
+    --bs-btn-bg: $white-color;
+    --bs-btn-border-radius: 18px;
+    --bs-btn-padding-x: 20px;
+    --bs-btn-padding-y: 6px;
+    --bs-btn-border-color: $filter-line-color;
+  }
+}
+
+.main__filter-content {
+  --bs-accordion-border-radius: 16px;
+  --bs-border-color: $white-color;
+  --bs-accordion-active-bg: $white-color;
+  --bs-accordion-active-color: $active-color;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-padding-y: 0;
+}
+
+.footer {
+  .btn-outline-secondary {
+    --bs-btn-color: $white-color;
+    --bs-btn-border-color: $footer-color-dark;
+    --bs-btn-bg: $footer-color-dark;
+    --bs-btn-border-radius: 25px;
+  }
+}

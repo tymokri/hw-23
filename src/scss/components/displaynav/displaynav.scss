@@ -1,0 +1,26 @@
+.displaynav {
+  background-color: $bg-color;
+
+  &__wrapper {
+    padding-top: 11px;
+  }
+  
+  &__content {
+    margin-bottom: 10px;
+
+    li {
+      font-size: $font-sm;
+
+      .active {
+        color: $accent-color!important;
+      }
+    }
+  }
+
+  &__title {
+    span {
+      font-size: $font-xxl;
+      font-weight: $font-w-bold;
+    }
+  }
+}

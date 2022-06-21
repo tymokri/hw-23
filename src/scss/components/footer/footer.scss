@@ -1,0 +1,126 @@
+.footer {
+  padding-top: 57px;
+  color: $secondary-color;
+  font-size: $font-sm;
+  background-color: $footer-color-dark;
+  letter-spacing: 0.03em;
+
+  a {
+    color: $white-color;
+  }
+
+  &__contact {
+    img {
+      margin-bottom: 14px;
+    }
+
+    div {
+      margin-bottom: 16px;
+    }
+
+    i {
+      color: $white-color;
+      margin-right: 10px;
+    }
+
+    &-menu-content {
+      column-gap: 50px;
+    }
+
+    &-address,
+    &-tel,
+    &-mail {
+      address,
+      span {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &__menu {
+    &-item {
+      p:not(:first-child),
+      p:not(:last-child) {
+        margin-bottom: 2px;
+      }
+    }
+
+    &-title {
+      @extend %footer-title;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__mail-input {
+    font-size: $font-md;
+    border-radius: 25px;
+    background-color: transparent;
+    line-height: 18px;
+    color: $secondary-color;
+    border: 1px $footer-color-dark solid;
+    padding: 13px 21px 13px 29px;
+  }
+
+  &__newsletter {
+    &-title {
+      @extend %footer-title;
+      margin-bottom: 23px;
+    }
+
+    &-input-group {
+      max-width: 225px;
+      border-radius: 25px;
+      border: 1px $secondary-color-dark solid;
+      margin-bottom: 8px;
+    }
+
+    &-send-icon {
+      color: $accent-color;
+    }
+    
+    &-lang {
+      margin-bottom: 30px;
+
+      &-button {
+        min-width: 225px;
+        border: 1px $secondary-color-dark solid;
+        border-radius: 25px;
+        padding: 13px 21px;
+
+        i,
+        span {
+          color: $white-color;
+          margin-right: 6px;
+        }
+      }
+    }
+
+    &-social-group {
+      margin-bottom: 40px;
+
+      &-item {
+        img:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .btn-sm {
+    color: $accent-color;
+  }
+
+  &__copyright {
+    padding: 6px 0;
+    background-color: $black-color;
+
+    &-arrow-up {
+      width: 30px;
+      height: 30px;
+      color: $white-color;
+      background-color: $accent-color;
+      border-radius: 50%;
+      text-align: center;
+    }
+  }
+}

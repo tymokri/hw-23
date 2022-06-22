@@ -12,14 +12,7 @@
     border-radius: 25px;
   }
 
-  &__row-items {
-    gap: 14px;
-  }
-
   &__row-items-wrapper {
-    width: calc(100% - 30px);
-    gap: 14px;
-
     &-item {
       position: relative;
       background-color: $white-color;
@@ -157,9 +150,9 @@
       &:first-child a,
       &:last-child a {
         font-size: $font-xl;
-        color: $white-color;
         padding: 8px 28px;
         border-radius: 18px;
+        color: $white-color;
       }
 
       &:first-child a {

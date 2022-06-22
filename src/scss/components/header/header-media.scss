@@ -15,4 +15,12 @@
       }
     }
   }
+
+  @media (max-width: $breakpoint-sm) {
+    &__navigation {
+      .navbar-brand {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

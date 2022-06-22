@@ -51,4 +51,31 @@
       display: none;
     }
   }
+
+  @media (max-width: $breakpoint-sm) {
+    &__pages-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+
+      &-current-number {
+        padding: 8px 18px;
+      }
+
+      span {
+        margin-right: 5px;
+
+        &:first-child a,
+        &:last-child a {
+          padding: 8px 18px;
+          border-radius: 18px;
+        }
+      }
+    }
+
+    &__pages-number-button {
+      padding: 8px 18px;
+    }
+  }
 }
